@@ -1,0 +1,126 @@
+
+#header {
+    position: absolute;
+    left: 0px;
+    top:0px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+    background: rgb(179, 27, 52);
+}
+
+p {
+    
+    position: relative;
+    left: 25px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid grey 3px;
+    
+}
+
+body {
+    background: rgb(153,153,153);
+}
+
+#mainwrapper {
+    position: absolute;
+    top: 120px;
+    align-self: center;
+    align-content: center;
+    left: 240px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-top: 0px;
+    
+}
+
+ul {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: auto;
+    list-style-type:upper-roman;
+    font-size: 30px;
+    color: #ff7575;
+    padding-bottom: 20px;
+    width: 80%;
+    
+}
+
+.title {
+    width: 55%;
+    border-bottom: solid grey 3px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.desc
+{
+    margin: 0;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    color:grey;
+    border: none;
+}
+
+#logo {
+    top:0px;
+    position: absolute;
+    height: 115px;
+    right:10px;
+}
+
+li {
+    position: relative;
+    left: 25px;
+    margin-top: 10px;
+    padding-top: 0px;
+    /*nothing here*/
+}
+
+div {
+    
+}
+
+#projtitle {
+    position: absolute;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    top:-10px;
+    left: 50%;
+}
+
+#projText {
+    
+    font-size: 30px;
+}
+
+#toc {
+    position: fixed;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    height: auto;
+    list-style-type:upper-roman;
+    font-size: 15px;
+    color: #ff7575;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    width: 190px;
+    left: -20px;
+    top: 110px;
+    
+}
+.bio
+{
+    position: fixed;
+    z-index: 1000;
+    height: 90%;
+    width: 90%;
+    background: whitesmoke;
+}

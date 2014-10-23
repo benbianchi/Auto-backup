@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="README.css" > 
+</head>
+<body>
+
+
+ 
+        <div id="header">
+            <img id = "logo" src=wpi_logo.gif>
+        <p>Ben Bianchi</p>
+        <p>Personal Volition<br> </p>
+            <div id="projtitle">
+                <p>Project: Automatic File Sharing and Backup
+                </p>
+            </div>
+        </div>
+        
+        <div id="mainwrapper"> 
+            <ul id="toc">
+                <p>Table of Contents</p>
+               <li>
+                    <a href="#title_1">Purpose</a>
+                </li>
+                <li>
+                    <a href="#title_2">client.js</a>
+                </li>
+                <li>
+                    <a href="#title_3">server.js</a>
+                </li>
+                <li>
+                    <a href="#title_4">Conclusion</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="title" id="title_1">Purpose</p>
+                    <p class="desc">To create a two processed system that allows a system to automatically sync up rapidly editted files between multiple machines.<br>
+                        A server must be set up with a user's configurations.</p>
+                </li>
+
+                <li>
+                    <p class="title" id="title_2">client.js</p>
+                    <p class="desc">Client.js starts with a shebang line (for us unix lovers).<br><br> A globals section is set up for easy configuration. As of now, "auth" and "path" are unused.<br>
+                        The process makes a request for a specified server, asking for files to download. If there are no files to be uploaded, then we recieve a 404 error. As files are downloaded they are compiled and saved to the client's disk.</p>
+                </li>
+
+                
+                <li>
+                    <p class="title" id="title_3">server.js</p>
+                    <p class="desc">Once again, server.js starts with a shebang file.<br>
+                        A dependencies and globals section has been added for fast configuration. If you have not installed the dependecies required, you will be unable to run the script. The server does generate a log for the user to increase the scalibility of the server. If a file in the global "path" is editted (And it is not a log file) then the file will be added to the queue for sharing. As the server doles out files, it pops the queue... shortening the size of the queue.</p>
+                </li>
+               <li>
+                    <p class="title" id="title_4">Conclusion</p>
+                    <p class="desc">This program has taught me how easy it is to create a scalable nodejs program. Error handling is rather simple.<br> I also learned how this program will be inefficient for power, using a psuedo spinlock.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="bio">Hello</div> -->
+</body>
+</html>
